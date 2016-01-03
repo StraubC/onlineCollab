@@ -22,7 +22,7 @@
 11 error There is likely additional logging output above.
 12 error System Windows_NT 6.2.9200
 13 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-14 error cwd D:\Eigene Daten\Documents\workspace\web\webserver\webserver
+14 error cwd D:\Eigene Daten\Documents\workspace\web\onlineCollab
 15 error node -v v0.10.23
 16 error npm -v 1.3.17
 17 error code ELIFECYCLE
