@@ -1,6 +1,5 @@
-webserver
+Online Collaboration Tool
 =========
 
 
-zu testzwecken gehostet auf: 
-http://webserverstraub.herokuapp.com/
+zu testzwecken gehostet auf: http://onlinecollab-straubc.rhcloud.com/
