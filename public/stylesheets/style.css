@@ -1,0 +1,446 @@
+/* html5 tags *****************************************************************/
+			article, aside, dialog, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+				margin: 0px;
+				padding: 0px;
+				border: 0px;
+				outline: 0px;
+				font-size: 100%;
+				vertical-align: baseline;
+				background: transparent;
+			}
+
+			article, aside, dialog, figure, footer, header, hgroup, nav, section {
+				display: block;
+			}
+
+			/* html, body *****************************************************************/
+			html, body {
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				background-color: transparent;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #bfbfbf, #ffffff);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#bfbfbf), to(#ffffff));
+				background-repeat: repeat-x;
+				color: #000;
+				margin: 0px;
+				padding: 0px;
+				font-size: 13.333px;
+				line-height: 16px;
+				height: 100%;
+			}
+
+			/* float stopper **************************************************************/
+			.clear {clear: both;}
+
+			/* spacer *********************************************************************/
+			#spacer {
+				position: relative;
+				float: left;
+				height: 50%;
+				width: 1px;
+				padding: 0px;
+				margin: 0px 0px -275px 0px;
+			}
+
+			/* page wrapper ***************************************************************/
+			#wrapper {
+				width: 1310px;
+				margin: 0px auto 0px;
+				padding: 5px;
+				border-style: solid;
+				border-color: #000000;
+				border-width: 1px;
+				-khtml-border-radius: 15px;
+				-moz-border-radius: 15px;
+				-webkit-border-radius: 15px;
+				border-radius: 15px;
+				position: relative;
+				background-color: transparent;
+				height: auto;
+				clear: left;
+				-webkit-box-shadow: 0px 4px 6px rgba(0,0,0,0.75);
+				-moz-box-shadow: 0px 4px 6px rgba(0,0,0,0.75);
+				box-shadow: 0px 4px 6px rgba(0,0,0,0.75);
+				background-image: -moz-linear-gradient(0% 0% 270deg, #e6e6e6, #808080);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e6e6e6), to(#808080));
+			}
+
+			/* header *********************************************************************/
+			#header {
+				position: absolute;
+				float: left;
+				left: 0px;
+				top: 0px;
+				width: 1300px;
+				height: 109px;
+				margin: 5px 0px 0px 5px;
+				padding: 5px;
+				background-color: #eeeeee;
+				border-style: solid;
+				border-color: #000000;
+				border-width: 1px 1px 0px 1px;
+				-khtml-border-radius: 10px 10px 0px 0px;
+				-moz-border-radius: 10px 10px 0px 0px;
+				-webkit-border-radius: 10px 10px 0px 0px;
+				border-radius: 10px 10px 0px 0px;
+				overflow: hidden;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #ccc, #666);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#666));
+			}
+
+			/* header headlines ***********************************************************/
+			#header-hgroup {}
+			#header-hgroup h1 {}
+			#header-hgroup h2 {}
+
+			/* footer *********************************************************************/
+			#footer {
+				position: absolute;
+				float: left;
+				left: 0px;
+				bottom: 0px;
+				width: 1300px;
+				height: 69px;
+				margin: 0px 0px 5px 5px;
+				padding: 5px;
+				background-color: #eeeeee;
+				border-style: solid;
+				border-color: #000000;
+				border-width: 0px 1px 1px 1px;
+				-khtml-border-radius: 0px 0px 10px 10px;
+				-moz-border-radius: 0px 0px 10px 10px;
+				-webkit-border-radius: 0px 0px 10px 10px;
+				border-radius: 0px 0px 10px 10px;
+				overflow: hidden;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #eee, #ccc);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ccc));
+			}
+
+			/* content wrapper ************************************************************/
+			#content {
+				position: relative;
+				float: left;
+				left: 0px;
+				top: 0px;
+				width: 1300px;
+				margin: 120px 0px 80px 0px;
+				padding: 5px;
+				border-style: solid;
+				border-color: #000000;
+				border-width: 0px 1px 0px 1px;
+				background-color: #efefef;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #666, #eee);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666), to(#eee));
+			}
+
+			/* column 1 *******************************************************************/
+			#col-1 {
+				float: left;
+				width: 200px;
+				height: 306px;
+				margin: 5px 0px;
+				padding: 5px;
+				border-style: solid;
+				border-color: #000000;
+				border-width: 1px;
+				-khtml-border-radius: 10px;
+				-moz-border-radius: 10px;
+				-webkit-border-radius: 10px;
+				border-radius: 10px;
+				background-color: #fefefe;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #ccc, #fff);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
+				overflow: auto;
+			}
+
+			/* column 2 *******************************************************************/
+			#col-2 {
+				float: left;
+				width: 1275px;
+				height: 900px;
+				margin: 5px 5px;
+				padding: 5px;
+				border-style: solid;
+				border-color: #000000;
+				border-width: 1px;
+				-khtml-border-radius: 10px 0px 0px 10px;
+				-moz-border-radius: 10px 0px 0px 10px;
+				-webkit-border-radius: 10px 0px 0px 10px;
+				border-radius: 10px 10px 10px 10px;
+				background-color: #fefefe;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #ccc, #fff);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
+				overflow: auto;
+			}
+
+			/* multi-column 2 *************************************************************/
+			.multi-col-2 {
+				-webkit-column-count: 3;
+				-moz-column-count: 3;
+				column-count: 3;
+				-webkit-column-gap: 11px;
+				-moz-column-gap: 11px;
+				column-gap: 11px;
+				-webkit-column-rule: 1px solid #ccc;
+				-moz-column-rule: 1px solid #ccc;
+				column-rule: 1px solid #ccc;
+			}
+
+			/* navigation *****************************************************************/
+			.navigation ul {
+				width: 160px;
+				margin: 5px auto;
+				padding: 5px 5px 4px 5px;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				-khtml-border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				background-color: #fff;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #fff, #eee);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+			}
+
+			.navigation li {
+				display: inline-block;
+				margin: 0px 0px 2px 0px;
+				padding: 1px;
+				border: 1px solid #ccc;
+				-khtml-border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+			}
+
+			.navigation li a {
+				font-family: tahoma, verdana, arial, helvetica, sans-serif;
+				font-size: 8pt;
+				line-height: 120%;
+				letter-spacing: 0.8pt;
+				text-align: left;
+				color: #333;
+				text-decoration: none;
+				vertical-align: baseline;
+				display: block;
+				width: 144px;
+				margin: 0px;
+				padding: 3px 5px;
+				border: 1px solid #ccc;
+				-khtml-border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				background-color: #fff;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #fff, #ccc);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+			}
+
+			.navigation li a:hover { 
+				color: #000;
+				background-color: #ccc;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #eee, #bbb);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#666));
+			}
+
+			/* top navigation **************************************************************/
+			.top-navigation {
+				position: absolute;
+				bottom: 5px;
+				left: 6px;
+				width: 936px;
+				padding: 0px;
+				margin: 0px;
+			}
+
+			.top-navigation ul {
+				border: 0px;
+				margin: 0px;
+				padding: 0px;
+				list-style-type: none;
+				text-align: center;
+			}
+
+			.top-navigation li {
+				float: left;		
+				margin: 0px 1px;
+				padding: 1px;
+				border: 1px solid #ccc;
+				-khtml-border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				background-color: #fff;
+			}
+
+			.top-navigation li a {
+				float: left;		
+				font-family: tahoma, verdana, arial, helvetica, sans-serif;
+				font-size: 8pt;
+				line-height: 120%;
+				letter-spacing: 0.8pt;
+				text-align: left;
+				color: #333;
+				text-decoration: none;
+				vertical-align: baseline;
+				display: block;
+				width: auto;
+				margin: 0px;
+				padding: 3px 5px;
+				border: 1px solid #ccc;
+				-khtml-border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				background-color: #fff;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #fff, #ccc);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ccc));
+			}
+
+			.top-navigation li.right { float: right; }
+
+			.top-navigation li a:hover { 
+				color: #000;
+				background-color: #ccc;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #eee, #bbb);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#666));
+			}
+
+			/* preview page styles ********************************************************/
+			h1, h2 {
+				margin: 0px;
+				padding: 0px;
+				font-size: 16pt;
+				font-weight: lighter;
+				color: #000;
+				text-align: center;
+				letter-spacing: 1pt;
+				word-wrap: break-word;
+			}
+
+			h2 { font-size: 8pt; }
+
+			p {
+				margin: 0px 0px 5px 0px;
+				padding: 0px;
+				font-size: 8pt;
+				color: #000;
+				text-align: justify;
+				word-wrap: break-word;
+			}
+
+			p.center { text-align: center; }
+
+			/* eigene */
+
+			#tools {
+				float: left;
+				width: 1250px;
+				height: 400px;
+				margin: 5px 5px;
+				padding: 5px;
+				border-style: solid;
+				border-color: #000000;
+				border-width: 1px;
+				-khtml-border-radius: 10px 0px 0px 10px;
+				-moz-border-radius: 10px 0px 0px 10px;
+				-webkit-border-radius: 10px 0px 0px 10px;
+				border-radius: 10px 10px 10px 10px;
+				background-color: #fefefe;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #ccc, #fff);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
+				overflow: auto;
+			}
+
+			#outputArea {
+				float: left;
+				width: 1230px;
+				height: auto;
+				margin: 5px 5px;
+				padding: 5px;
+				border-style: solid;
+				border-color: #000000;
+				border-width: 1px;
+				-khtml-border-radius: 10px 0px 0px 10px;
+				-moz-border-radius: 10px 0px 0px 10px;
+				-webkit-border-radius: 10px 0px 0px 10px;
+				border-radius: 10px 10px 10px 10px;
+				background-color: #fefefe;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #ccc, #fff);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
+				overflow: auto;
+			}
+
+			.singleOutput {
+				float: left;
+				width: 200px;
+				height: auto;
+				margin: 5px 5px;
+				padding: 5px;
+				border-style: solid;
+				border-color: #000000;
+				border-width: 1px;
+				-khtml-border-radius: 10px 0px 0px 10px;
+				-moz-border-radius: 10px 0px 0px 10px;
+				-webkit-border-radius: 10px 0px 0px 10px;
+				border-radius: 10px 10px 10px 10px;
+				background-color: #fefefe;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #ccc, #fff);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
+				overflow: auto;
+			}
+
+			.box  {
+				width: 600px;
+				margin: 5px auto;
+				padding: 5px 5px 4px 5px;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				-khtml-border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;
+				background-color: #fff;
+				background-image: -moz-linear-gradient(0% 0% 270deg, #fff, #eee);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eee));
+				overflow: auto;
+				float: left;
+			}
+			.box h1 {
+				margin: 0px;
+				padding: 0px;
+				font-size: 10pt;
+				font-weight: lighter;
+				color: #000;
+				text-align: center;
+				letter-spacing: 1pt;
+				word-wrap: break-word;
+			}
+			.box a {
+        		border: 1px solid black; 
+        		height: 30px; 
+        		line-height: 30px; 
+        		padding: 0 10px; 
+        		vertical-align: middle; 
+        		text-align: center; 
+        		text-decoration: none; 
+        		display: inline-block; 
+        		color: black; 
+        		font-weight: bold;
+      		}
+      		.box button {
+        		border: 1px solid black; 
+        		height: 30px; 
+        		line-height: 30px; 
+        		padding: 0 10px; 
+        		vertical-align: middle; 
+        		text-align: center; 
+        		text-decoration: none; 
+        		display: inline-block; 
+        		color: black; 
+        		font-weight: bold;
+      		}
+
+      		textarea {
+   				resize: none;
+			}
+	

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+	<script src="/javascripts/jquery.js"> </script>
+	<script src="/javascripts/data.js"> </script>
+</head>
+<body class="center">
+	<header id="banner">
+		<h1>Webserver</h1>
+		<nav> 
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li class="active"><a href="/dataPage">Data</a></li>
+				<li><a href="/login">Login</a></li>
+				<li><a href="/session">Sessions</a></li>
+				<li><a href="/chat">Chat</a></li>
+			</ul>
+		</nav>
+		<div id="login">
+			<%
+				if (loggedIn){ %>	
+					Angemeldet als <%= login %>.
+				<%}
+				else{%>
+					Nicht angemeldet.
+				<%}
+			%>
+			</div>
+	</header>
+	<section id="content">
+				
+		<div class="Button" id="showAll">Alle Daten</div><div class="Button" id="search">Daten suchen</div><div class="Button" id="insert">Daten eintragen</div>
+		<div id="showAllBox">
+			
+		</div>
+		<div id="searchBox" style="display:none;">
+
+			<form id="searchForm" action="#">
+				<p>
+					<label>Name des gesuchten Eintrags</label>
+					<input type="text" id="searchName"/>
+				</p>
+				
+				<p>
+					<input type="submit" value="suchen"/>
+				</p>
+			</form>
+			<div id="searchResultBox">
+				
+			</div>	
+		</div>
+
+		<div id= "insertBox" style="display:none;">
+
+			<form action="/data" method="post">
+				<p>
+					<label>Name</label>
+					<input type="text" name="dataName"/>
+				</p>
+				<p>
+					<label>Wert 1 </label>
+					<input type="text" name="dataVal1"/>
+				</p>
+				<p>
+					<input type="submit" value="Eintragen"/>
+				</p>
+			</form>
+			
+		</div>
+		<div id= "editBox" style= "display:none;">
+
+			<!-- <form id="updateForm" action="/data/:id" method="post">
+				<p>
+					<label>neuer Name:</label>
+					<input type="text" name="updateName"/>
+				</p>
+				<p>
+					<label>neuer Wert:</label>
+					<input type="text" name="updateValue1"/>
+				</p>
+				<p style="display:none">
+					<input type="text" id="updateId"/>
+				</p>
+				
+				<p>
+					<input type="submit" value="update"/>
+				</p>
+			</form> -->
+			<form id="updateForm" action="#">
+				<p>
+					<label>neuer Name:</label>
+					<input type="text" id="updateName"/>
+				</p>
+				<p>
+					<label>neuer Wert:</label>
+					<input type="text" id="updateValue1"/>
+				</p>
+				<p style="display:none">
+					<input type="text" id="updateId"/>
+				</p>
+				
+				<p>
+					<input type="submit" value="update"/>
+				</p>
+			</form>
+			<form id="deleteForm" action="#">
+				<p style="display:none">
+					<input type="text" id="deleteId"/>
+				</p>
+				<input type="submit" value="delete" />
+			</form>
+
+		</div>
+
+	</section>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<% include header.html %>
+	<script src="/javascripts/sketch.js"></script>
+	<script src="/javascripts/notizen.js"></script>
+	
+
+	<section id="col-2">
+		<hgroup>
+			<h1>Notizen</h1>
+			<h2>mehr Informationen</h2>
+		</hgroup>
+		
+		<div id= "tools">
+			<div class = "box" id ="skizzenTool">
+				<h1>neue Skizze anlegen</h1>
+				<canvas id="colors_sketch" width="600" height="300"></canvas>
+				<script type="text/javascript">
+				  $(function() {
+				    $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
+				      $('#skizzenTool .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'></a> ");
+				    });
+				    $.each([3, 5, 10, 15], function() {
+				      $('#skizzenTool .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
+				    });
+				    $('#colors_sketch').sketch();
+				  });
+				</script>
+				<div class="tools">
+					<button type="button" id= "sketchButton">speichern</button>
+				  	<!-- <a href="#colors_sketch" data-download="png" style="float: right; width: 100px;">speichern</a> -->
+				</div>
+			</div>
+
+			<div class = "box" id ="notizenTool">
+				<h1>neue Notitz anlegen</h1>
+				<textarea id= "notizenText" cols=82 rows=20></textarea>
+				<button type="button" id="notizenTextButton">speichern</button>
+				<!-- <input type="text" id="notitzenText" size =500  /> -->
+			</div>
+		</div>
+		<div id= "outputArea">
+			
+			
+		</div>
+    			
+	</section>
+<% include footer.html %>
